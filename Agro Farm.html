@@ -1,0 +1,1015 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Agro Farm</title>
+<meta name="description" content="Agro Farm grows crops, vegetables, poultry, livestock and fish. Browse our produce, see how we farm and send an order or partnership enquiry.">
+<meta property="og:title" content="Agro Farm | Growing Quality Food, Building a Sustainable Future">
+<meta property="og:description" content="Fresh farm produce, responsible farming and reliable supply. Order, visit or partner with Agro Farm.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#2d6a3a">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Agro Farm","description":"Mixed farm producing crops, vegetables, poultry, livestock and fish.","telephone":"+234 800 000 0000","email":"info@agrofarm.example","address":{"@type":"PostalAddress","streetAddress":"[Farm address]","addressLocality":"[Town]","addressRegion":"[State]","addressCountry":"NG"}}
+</script>
+<style>
+/* Layout: sticky header, full-bleed dawn hero with a quick-facts strip, then alternating light/tinted sections, floating WhatsApp button. */
+:root{
+  --font-display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --font-body:"Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --bg:#fafcf6; --surface:#ffffff; --surface-2:#eef3e6; --fg:#1b291d; --muted:#556655; --line:#d9e2cf;
+  --brand:#2d6a3a; --brand-hover:#1f5029; --on-brand:#ffffff; --link:#2d6a3a;
+  --earth:#7b5232; --earth-soft:#efe4d6; --focus:#2d6a3a;
+  --shadow:0 1px 2px rgba(27,41,29,.06),0 10px 28px rgba(27,41,29,.09);
+  --hero-top:#14301c; --hero-mid:#2d6a3a; --hero-low:#c9b66a;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1710; --surface:#152019; --surface-2:#1a281d; --fg:#e8f0e1; --muted:#9db09a; --line:#273a2a;
+  --brand:#3b8449; --brand-hover:#4a9858; --on-brand:#ffffff; --link:#8fd079;
+  --earth:#d2a979; --earth-soft:#2a2118; --focus:#8fd079;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1710; --surface:#152019; --surface-2:#1a281d; --fg:#e8f0e1; --muted:#9db09a; --line:#273a2a;
+  --brand:#3b8449; --brand-hover:#4a9858; --on-brand:#ffffff; --link:#8fd079;
+  --earth:#d2a979; --earth-soft:#2a2118; --focus:#8fd079;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 10px 28px rgba(0,0,0,.35); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:17px;line-height:1.6;-webkit-text-size-adjust:100%}
+h1,h2,h3,h4{font-family:var(--font-display);line-height:1.12;margin:0;text-wrap:balance;letter-spacing:-.01em}
+p{margin:0}
+a{color:var(--link)}
+img,svg{max-width:100%}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1160px;margin-inline:auto;padding-inline:20px}
+.ph{border-bottom:1px dotted var(--earth);color:var(--earth)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:46px;padding:.65rem 1.25rem;border-radius:8px;border:2px solid transparent;font:600 1rem/1.2 var(--font-body);text-decoration:none;cursor:pointer;background:var(--brand);color:var(--on-brand);transition:background .15s,border-color .15s}
+.btn:hover{background:var(--brand-hover)}
+.btn.ghost{background:transparent;border-color:currentColor;color:var(--link)}
+.btn.ghost:hover{background:var(--surface-2)}
+.btn.light{background:#fff;color:#1b4527}
+.btn.light:hover{background:#eaf3e2}
+.btn.outline-light{background:transparent;border-color:rgba(255,255,255,.75);color:#fff}
+.btn.outline-light:hover{background:rgba(255,255,255,.12)}
+.btn.small{min-height:40px;padding:.45rem .9rem;font-size:.95rem}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* header */
+.site-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:40;background:var(--bg);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;min-height:66px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--fg);font:800 1.35rem/1 var(--font-display);margin-right:auto}
+.brand svg{width:34px;height:34px;color:var(--brand)}
+.brand span em{font-style:normal;color:var(--earth)}
+nav#nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--bg);border-bottom:1px solid var(--line);padding:8px 20px 18px;box-shadow:var(--shadow)}
+nav#nav.open{display:block}
+nav#nav a{display:block;padding:.7rem 0;text-decoration:none;color:var(--fg);font-weight:600;border-bottom:1px solid var(--line)}
+nav#nav a.active{color:var(--link)}
+nav#nav a.cta{margin-top:12px;border:0;text-align:center;background:var(--brand);color:var(--on-brand);border-radius:8px}
+.bar-actions{display:flex;gap:6px}
+.icon-btn{width:44px;height:44px;border-radius:8px;border:1px solid var(--line);background:var(--surface);color:var(--fg);display:grid;place-items:center;cursor:pointer}
+.icon-btn svg{width:22px;height:22px}
+@media (min-width:1060px){
+  .icon-btn.menu{display:none}
+  nav#nav{display:flex;position:static;padding:0;border:0;box-shadow:none;background:none;gap:4px;align-items:center}
+  nav#nav a{border:0;padding:.5rem .6rem;font-size:.95rem;border-radius:6px}
+  nav#nav a:hover{background:var(--surface-2)}
+  nav#nav a.cta{margin:0 0 0 8px;padding:.55rem 1rem}
+  nav#nav a.cta:hover{background:var(--brand-hover)}
+  .brand{margin-right:20px}
+  .bar{gap:8px}
+  .bar-actions{margin-left:auto}
+}
+
+/* hero slider */
+.slider{position:relative;color:#fff;background:#14301c;overflow:hidden;height:clamp(600px,84vh,760px)}
+.slides{display:flex;height:100%;transition:transform .9s cubic-bezier(.65,0,.25,1);touch-action:pan-y}
+.slide{position:relative;flex:0 0 100%;height:100%;overflow:hidden}
+.slide .bg{position:absolute;inset:0}
+.slide .bg svg,.slide .bg img{width:100%;height:100%;display:block;object-fit:cover;transform:scale(1.02)}
+.slide.on .bg svg,.slide.on .bg img{animation:kb 9s ease-out forwards}
+@keyframes kb{to{transform:scale(1.1)}}
+.slide::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,22,12,.8) 0%,rgba(8,22,12,.5) 50%,rgba(8,22,12,.06) 100%),linear-gradient(0deg,rgba(8,22,12,.6),transparent 40%);pointer-events:none}
+.slide .wrap{position:relative;z-index:2;height:100%}
+.slide .copy{height:100%;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;padding-bottom:120px}
+.slide .copy > *{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.slide.on .copy > *{opacity:1;transform:none}
+.slide.on .copy > :nth-child(2){transition-delay:.15s}
+.slide.on .copy > :nth-child(3){transition-delay:.3s}
+.slide.on .copy > :nth-child(4){transition-delay:.45s}
+.slide .kicker{font:700 .82rem/1 var(--font-body);letter-spacing:.16em;text-transform:uppercase;color:#d5efb8;margin-bottom:18px}
+.slide .stitle{font-family:var(--font-display);font-size:clamp(2.2rem,1.2rem + 4.6vw,4.4rem);font-weight:800;line-height:1.04;max-width:16ch;text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.slide .lead{margin-top:20px;max-width:50ch;font-size:1.15rem;color:#eef7e6;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+.slide .actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.ctrl{position:absolute;left:0;right:0;bottom:74px;z-index:5}
+.ctrl-in{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.dots{display:flex;align-items:center;gap:4px}
+.dots button{width:24px;height:30px;padding:0;border:0;background:none;display:grid;place-items:center;cursor:pointer;transition:width .35s}
+.dots button.on{width:64px}
+.dots i{display:block;width:100%;height:6px;border-radius:99px;background:rgba(255,255,255,.45);position:relative;overflow:hidden}
+.dots .on i::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:left;animation:prog var(--dur,6.5s) linear forwards}
+@keyframes prog{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.slider.paused .dots .on i::after{animation-play-state:paused}
+.arrows{display:flex;gap:8px}
+.arrows button{width:46px;height:46px;border-radius:50%;border:1.5px solid rgba(255,255,255,.55);background:rgba(10,28,14,.35);color:#fff;display:grid;place-items:center;cursor:pointer;backdrop-filter:blur(4px)}
+.arrows button:hover{background:rgba(255,255,255,.22)}
+.arrows svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+@media (prefers-reduced-motion:reduce){.dots .on i::after{transform:none}.slide .copy > *{opacity:1;transform:none}}
+.cloud{animation:drift 70s ease-in-out infinite alternate}
+.c2{animation-duration:95s;animation-direction:alternate-reverse}
+.c3{animation-duration:55s}
+@keyframes drift{from{transform:translateX(-40px)}to{transform:translateX(70px)}}
+.bird{animation:fly 16s linear infinite}
+@keyframes fly{from{transform:translateX(-80px)}to{transform:translateX(140px)}}
+.rip{transform-box:fill-box;transform-origin:center;animation:rip 4.5s ease-out infinite}
+.rip2{animation-delay:1.8s}
+@keyframes rip{from{transform:scale(.4);opacity:.7}to{transform:scale(1.5);opacity:0}}
+
+.facts{position:relative;z-index:3;margin-top:-44px}
+.facts-grid{display:grid;grid-template-columns:1fr;gap:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.fact{padding:18px 22px;min-width:0}
+.fact + .fact{border-top:1px solid var(--line)}
+.fact b{display:block;font:700 .78rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--earth);margin-bottom:6px}
+.fact span,.fact a{overflow-wrap:anywhere}
+@media (min-width:820px){
+  .facts-grid{grid-template-columns:repeat(3,1fr)}
+  .fact + .fact{border-top:0;border-left:1px solid var(--line)}
+}
+
+/* sections */
+section{scroll-margin-top:72px}
+.section{padding-block:84px}
+.section.tint{background:var(--surface-2)}
+.eyebrow{font:700 .8rem/1 var(--font-body);letter-spacing:.14em;text-transform:uppercase;color:var(--earth);margin-bottom:14px}
+.section h2{font-size:clamp(1.9rem,1.3rem + 2vw,2.8rem);max-width:20ch}
+.lede{margin-top:16px;max-width:62ch;color:var(--muted);font-size:1.08rem}
+.sec-head{margin-bottom:40px}
+
+/* about */
+.about-grid{display:grid;gap:36px;grid-template-columns:1fr}
+.about-grid > *{min-width:0}
+.about-art{border-radius:14px;overflow:hidden;aspect-ratio:4/3;box-shadow:var(--shadow)}
+.about-art svg{width:100%;height:100%;display:block}
+.about-text p + p{margin-top:14px}
+.mvv{display:grid;gap:28px;grid-template-columns:1fr;margin-top:48px}
+.mvv > div{border-top:3px solid var(--brand);padding-top:16px;min-width:0}
+.mvv h3{font-size:1.3rem;margin-bottom:8px}
+.mvv ul{margin:0;padding-left:1.1rem;color:var(--muted)}
+.mvv li + li{margin-top:6px}
+.mvv li b{color:var(--fg)}
+.history{margin-top:56px}
+.history h3{font-size:1.4rem;margin-bottom:18px}
+.tl{list-style:none;margin:0;padding:0;display:grid;gap:0;border-left:2px solid var(--line)}
+.tl li{position:relative;padding:0 0 22px 24px}
+.tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--brand);border:2px solid var(--bg)}
+.tl b{display:block;font-family:var(--font-display);font-size:1.05rem}
+.tl p{color:var(--muted);max-width:60ch}
+.commit{margin-top:36px;padding:22px 24px;border-radius:12px;background:var(--earth-soft);color:var(--fg)}
+.commit h3{font-size:1.15rem;margin-bottom:6px;color:var(--earth)}
+@media (min-width:860px){
+  .about-grid{grid-template-columns:1.1fr .9fr;align-items:center;gap:56px}
+  .mvv{grid-template-columns:repeat(3,1fr);gap:36px}
+}
+
+/* cards */
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.card .art{aspect-ratio:4/3;overflow:hidden;background:var(--surface-2)}
+.card .art svg,.card .art img{width:100%;height:100%;display:block;object-fit:cover}
+.card .body{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:1.25rem}
+.card p{color:var(--muted);font-size:.98rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:6px}
+.chip{font-size:.8rem;font-weight:600;padding:.2rem .6rem;border-radius:99px;background:var(--surface-2);color:var(--earth)}
+
+/* products */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.filters button{min-height:42px;padding:.4rem 1rem;border-radius:99px;border:1.5px solid var(--line);background:var(--surface);color:var(--fg);font:600 .95rem var(--font-body);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.prod .art{aspect-ratio:4/3}
+.prod .cat{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--earth)}
+.price{font:800 1.3rem/1 var(--font-display);font-variant-numeric:tabular-nums;margin-top:4px}
+.price small{font:500 .85rem var(--font-body);color:var(--muted)}
+.prod .row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.prod .row .btn{flex:1 1 120px}
+.note{margin-top:22px;color:var(--muted);font-size:.95rem}
+
+/* partner band */
+.band{background:linear-gradient(135deg,#1b4527,#2d6a3a);color:#fff;border-radius:16px;padding:34px 26px;display:grid;gap:20px;grid-template-columns:1fr}
+.band h2{font-size:clamp(1.6rem,1.1rem + 1.8vw,2.3rem);max-width:22ch}
+.band p{color:#dcecd0;max-width:58ch;margin-top:10px}
+.band .actions{display:flex;flex-wrap:wrap;gap:12px}
+@media (min-width:860px){.band{grid-template-columns:1.4fr 1fr;align-items:center;padding:44px}.band .actions{justify-content:flex-end}}
+
+/* why */
+.why-grid{display:grid;gap:26px 34px;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr))}
+.why{display:flex;gap:16px;min-width:0}
+.why .ic{flex:none;width:48px;height:48px;border-radius:10px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center;color:var(--brand)}
+.section.tint .why .ic{background:var(--surface)}
+.why .ic svg{width:26px;height:26px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.why h3{font-size:1.15rem;margin-bottom:4px}
+.why p{color:var(--muted);font-size:.98rem}
+.steps{margin:56px 0 0;padding:0;list-style:none;display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));counter-reset:s}
+.steps li{counter-increment:s;padding-top:14px;border-top:3px solid var(--earth);min-width:0}
+.steps li::before{content:"Step " counter(s);display:block;font:700 .78rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--earth);margin-bottom:8px}
+.steps b{display:block;font-family:var(--font-display);font-size:1.1rem;margin-bottom:4px}
+.steps span{color:var(--muted);font-size:.97rem}
+.how-h{font-size:1.4rem;margin-top:60px}
+
+/* gallery */
+.gal{display:grid;gap:12px;grid-template-columns:repeat(2,1fr);grid-auto-flow:dense}
+.gal button{position:relative;padding:0;border:0;border-radius:10px;overflow:hidden;cursor:zoom-in;background:var(--surface-2);aspect-ratio:1/1;min-width:0}
+.gal button svg,.gal button img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .35s}
+.gal button:hover svg,.gal button:hover img{transform:scale(1.05)}
+.gal .cap{position:absolute;left:0;right:0;bottom:0;padding:26px 12px 10px;background:linear-gradient(transparent,rgba(10,25,12,.8));color:#fff;font:600 .9rem/1.2 var(--font-body);text-align:left}
+@media (min-width:760px){.gal{grid-template-columns:repeat(4,1fr)}.gal .wide{grid-column:span 2;aspect-ratio:2/1}}
+#lb{position:fixed;inset:0;z-index:80;background:rgba(8,18,10,.92);display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 16px;gap:14px}
+#lb[hidden]{display:none}
+#lb .stage{width:min(900px,100%);aspect-ratio:4/3;max-height:70vh;border-radius:12px;overflow:hidden;background:#000}
+#lb .stage svg,#lb .stage img{width:100%;height:100%;display:block;object-fit:cover}
+#lb p{color:#eaf3e2;font-weight:600;text-align:center}
+#lb .ctl{display:flex;gap:10px}
+#lb .ctl button{min-height:44px;padding:.4rem 1rem;border-radius:8px;border:1.5px solid rgba(255,255,255,.5);background:transparent;color:#fff;font:600 1rem var(--font-body);cursor:pointer}
+#lb .ctl button:hover{background:rgba(255,255,255,.14)}
+
+/* news */
+.news-item{display:flex;flex-direction:column}
+.news-item .meta{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;font-size:.85rem;color:var(--muted)}
+.news-item .tag{font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.74rem;color:var(--earth)}
+.news-item .more{margin-top:8px;color:var(--muted);font-size:.98rem}
+.news-item .more p + p{margin-top:10px}
+.news-item button.tog{align-self:flex-start;margin-top:auto;background:none;border:0;padding:.4rem 0;color:var(--link);font:700 .98rem var(--font-body);cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+
+/* contact */
+.contact-grid{display:grid;gap:28px;grid-template-columns:1fr}
+.contact-grid > *{min-width:0}
+@media (min-width:900px){.contact-grid{grid-template-columns:1.15fr .85fr;gap:40px}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:24px}
+.panel h3{font-size:1.3rem;margin-bottom:14px}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.field label{font-weight:600;font-size:.95rem}
+.field input,.field select,.field textarea{width:100%;font:1rem/1.4 var(--font-body);padding:.7rem .8rem;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);min-height:46px}
+.field textarea{min-height:130px;resize:vertical}
+.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--brand)}
+.field .err{color:#b3261e;font-size:.88rem;min-height:0}
+:root[data-theme="dark"] .field .err{color:#ff9b93}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .field .err{color:#ff9b93}}
+.two{display:grid;gap:0 16px;grid-template-columns:1fr}
+@media (min-width:600px){.two{grid-template-columns:1fr 1fr}}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.hint{font-size:.88rem;color:var(--muted)}
+#result{margin-top:20px;padding:20px;border-radius:12px;background:var(--surface-2);border:1px solid var(--line)}
+#result h4{font-size:1.15rem;margin-bottom:8px}
+#result textarea{width:100%;min-height:150px;margin:12px 0;padding:.7rem;border-radius:8px;border:1.5px solid var(--line);background:var(--bg);color:var(--fg);font:.95rem/1.5 var(--font-body)}
+#result .actions{display:flex;flex-wrap:wrap;gap:10px}
+.info-list{list-style:none;margin:0;padding:0;display:grid;gap:14px}
+.info-list li{min-width:0}
+.info-list b{display:block;font:700 .76rem/1 var(--font-body);letter-spacing:.12em;text-transform:uppercase;color:var(--earth);margin-bottom:4px}
+.info-list span,.info-list a{overflow-wrap:anywhere}
+.map{margin-top:20px;border-radius:12px;overflow:hidden;border:1px solid var(--line);background:var(--surface-2)}
+.map svg{display:block;width:100%;height:auto}
+.map .btn{margin:14px}
+.social{display:flex;gap:10px;margin-top:20px}
+.social a{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;color:var(--fg);background:var(--surface)}
+.social a:hover{background:var(--brand);color:var(--on-brand);border-color:var(--brand)}
+.social svg{width:21px;height:21px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.social svg .f{fill:currentColor;stroke:none}
+
+/* footer */
+footer{background:#14301c;color:#d6e6c9;padding-block:48px calc(36px + env(safe-area-inset-bottom,0px))}
+footer a{color:#e4f2d6}
+.foot{display:grid;gap:30px;grid-template-columns:1fr}
+.foot > *{min-width:0}
+.foot h4{font-size:1rem;color:#fff;margin-bottom:10px}
+.foot ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.foot p{max-width:42ch;font-size:.97rem}
+.foot .social a{background:transparent;border-color:rgba(255,255,255,.35);color:#e4f2d6}
+.foot .social a:hover{background:#fff;color:#14301c}
+.copy{margin-top:34px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);font-size:.9rem;color:#b9cfa9}
+@media (min-width:820px){.foot{grid-template-columns:1.5fr 1fr 1fr}}
+
+/* floating whatsapp */
+.wa-float{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:50;display:flex;align-items:center;gap:8px;padding:.7rem 1rem;border-radius:99px;background:#1f8f4e;color:#fff;text-decoration:none;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.28)}
+.wa-float:hover{background:#177a41}
+.wa-float svg{width:24px;height:24px;fill:currentColor}
+@media (max-width:480px){.wa-float span{display:none}.wa-float{padding:.85rem}}
+</style>
+
+<a class="sr" href="#home" data-go="home">Skip to content</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><defs>
+<filter id="grain" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/></filter>
+<filter id="soft" x="-20%" y="-50%" width="140%" height="200%"><feGaussianBlur stdDeviation="7"/></filter>
+<linearGradient id="cowb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fbf8f2"/><stop offset="1" stop-color="#d3cabb"/></linearGradient>
+<radialGradient id="vig" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".28"/></radialGradient>
+<radialGradient id="vigH" cx=".5" cy=".5" r=".8"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".3"/></radialGradient>
+</defs></svg>
+
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="brand" href="#home" data-go="home" aria-label="Agro Farm home">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 27c0-9 6-15 18-16 0 10-6 16-15 16" fill="currentColor"/><path d="M11 30l9-10" stroke="var(--bg)" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+      <span data-name-split>Agro <em>Farm</em></span>
+    </a>
+    <nav id="nav" aria-label="Main navigation">
+      <a href="#home" data-go="home">Home</a>
+      <a href="#about" data-go="about">About</a>
+      <a href="#activities" data-go="activities">Our Farm</a>
+      <a href="#products" data-go="products">Products</a>
+      <a href="#why" data-go="why">Why Us</a>
+      <a href="#gallery" data-go="gallery">Gallery</a>
+      <a href="#news" data-go="news">News</a>
+      <a href="#contact" data-go="contact" class="cta">Contact Us</a>
+    </nav>
+    <div class="bar-actions">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 019.5 4 8 8 0 1020 14.5z"/></svg>
+      </button>
+      <button class="icon-btn menu" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- HOME -->
+<section id="home" class="slider" aria-roledescription="carousel" aria-label="Farm highlights">
+ <div class="slides" id="slides">
+  <div class="slide on" role="group" aria-roledescription="slide" aria-label="1 of 5">
+    <div class="bg" data-hero="0"></div>
+    <div class="wrap"><div class="copy">
+      <p class="kicker">Mixed farm · Crops · Livestock · Poultry · Fish</p>
+      <h1 class="stitle">Growing Quality Food, Building a Sustainable Future</h1>
+      <p class="lead"><span data-bind="name">Agro Farm</span> grows crops and vegetables and raises poultry, livestock and fish. We supply fresh produce to households, traders, restaurants and institutions, and we work with partners who want to grow agriculture alongside us.</p>
+      <div class="actions"><a class="btn light" href="#activities" data-go="activities">Explore Our Farm</a><a class="btn outline-light" href="#contact" data-go="contact">Contact Us</a></div>
+    </div></div>
+  </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="2 of 5">
+    <div class="bg" data-hero="1"></div>
+    <div class="wrap"><div class="copy">
+      <p class="kicker">Livestock</p>
+      <h2 class="stitle">Healthy animals, raised with care</h2>
+      <p class="lead">Our goats and cattle graze on open pasture with clean water, shade and regular health checks.</p>
+      <div class="actions"><a class="btn light" href="#products" data-go="products">See our livestock</a><a class="btn outline-light" href="#contact" data-go="contact" data-type="Product enquiry">Ask about stock</a></div>
+    </div></div>
+  </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="3 of 5">
+    <div class="bg" data-hero="2"></div>
+    <div class="wrap"><div class="copy">
+      <p class="kicker">Poultry</p>
+      <h2 class="stitle">Fresh eggs and quality poultry every week</h2>
+      <p class="lead">Layers and broilers are kept in well-ventilated houses and fed on balanced rations.</p>
+      <div class="actions"><a class="btn light" href="#products" data-go="products">View poultry products</a><a class="btn outline-light" data-wa href="#contact" target="_blank" rel="noopener">Order on WhatsApp</a></div>
+    </div></div>
+  </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="4 of 5">
+    <div class="bg" data-hero="3"></div>
+    <div class="wrap"><div class="copy">
+      <p class="kicker">Fish farming</p>
+      <h2 class="stitle">Pond-raised catfish, fresh to order</h2>
+      <p class="lead">Managed ponds, clean water and careful feeding give us firm, fresh fish for your kitchen or market stall.</p>
+      <div class="actions"><a class="btn light" href="#products" data-go="products">See our fish</a><a class="btn outline-light" href="#contact" data-go="contact">Contact Us</a></div>
+    </div></div>
+  </div>
+  <div class="slide" role="group" aria-roledescription="slide" aria-label="5 of 5">
+    <div class="bg" data-hero="4"></div>
+    <div class="wrap"><div class="copy">
+      <p class="kicker">From our fields to your table</p>
+      <h2 class="stitle">Harvested fresh, packed with care</h2>
+      <p class="lead">Maize, cassava, tomatoes, peppers and leafy greens, sorted and packed for households, traders and restaurants.</p>
+      <div class="actions"><a class="btn light" href="#products" data-go="products">Browse products</a><a class="btn outline-light" href="#contact" data-go="contact" data-type="Partnership">Partner with us</a></div>
+    </div></div>
+  </div>
+ </div>
+ <div class="ctrl"><div class="wrap ctrl-in">
+  <div class="dots" id="dots">
+   <button type="button" aria-label="Go to slide 1"><i></i></button><button type="button" aria-label="Go to slide 2"><i></i></button><button type="button" aria-label="Go to slide 3"><i></i></button><button type="button" aria-label="Go to slide 4"><i></i></button><button type="button" aria-label="Go to slide 5"><i></i></button>
+  </div>
+  <div class="arrows">
+   <button type="button" id="sPlay" aria-label="Pause slideshow"><svg viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></svg></button>
+   <button type="button" id="sPrev" aria-label="Previous slide"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+   <button type="button" id="sNext" aria-label="Next slide"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+  </div>
+ </div></div>
+</section>
+
+<div class="facts"><div class="wrap">
+  <div class="facts-grid">
+    <div class="fact"><b>Order by WhatsApp</b><a data-wa href="#contact" target="_blank" rel="noopener">Send us a message</a></div>
+    <div class="fact"><b>Visit the farm</b><span data-bind="address">[Farm address]</span></div>
+    <div class="fact"><b>Opening hours</b><span data-bind="hours">Mon – Sat, 8:00am – 5:00pm</span></div>
+  </div>
+</div></div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="eyebrow">About Us</p>
+        <h2 style="margin-bottom:18px">A working farm that puts quality and care first</h2>
+        <p><span data-bind="name">Agro Farm</span> is a mixed farm producing food crops, vegetables, poultry, livestock and fish. We started with a simple aim: grow good food, sell it fairly and look after the land that feeds us.</p>
+        <p>Today we supply <span class="ph">[households, market traders, restaurants, schools and other buyers]</span> and work with people who want to learn, partner or invest in farming. The farm covers <span class="ph">[X hectares]</span> and employs <span class="ph">[X]</span> people from the surrounding community.</p>
+      </div>
+      <div class="about-art" data-scene="barn"></div>
+    </div>
+
+    <div class="mvv">
+      <div><h3>Our mission</h3><p style="color:var(--muted)">To produce safe, fresh and affordable food through responsible farming, and to supply our customers reliably and honestly.</p></div>
+      <div><h3>Our vision</h3><p style="color:var(--muted)">To be a trusted name in agricultural production in our region, known for quality produce, fair dealing and practical support for local farming growth.</p></div>
+      <div><h3>Our values</h3>
+        <ul>
+          <li><b>Quality first.</b> We sort, check and pack with care.</li>
+          <li><b>Responsible farming.</b> We use land, water and feed carefully.</li>
+          <li><b>Honest dealing.</b> Clear prices and clear communication.</li>
+          <li><b>Community.</b> We share skills and create local work.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="history">
+      <h3>Our story</h3>
+      <ol class="tl">
+        <li><b><span class="ph">[Year]</span> · The farm begins</b><p><span class="ph">[Short note on who started the farm and why.]</span></p></li>
+        <li><b><span class="ph">[Year]</span> · First commercial harvest</b><p><span class="ph">[Which crops were first sold, and to whom.]</span></p></li>
+        <li><b><span class="ph">[Year]</span> · Poultry, livestock and fish added</b><p><span class="ph">[How the farm grew into a mixed operation.]</span></p></li>
+        <li><b>Today · Supplying regular customers</b><p><span class="ph">[Current scale, markets served and plans for the next few years.]</span></p></li>
+      </ol>
+    </div>
+
+    <div class="commit">
+      <h3>Our commitment to sustainable farming</h3>
+      <p>We aim to farm in a way that keeps soil healthy, uses water carefully and reduces waste. Our practices include <span class="ph">[crop rotation]</span>, <span class="ph">[composting of crop and animal waste]</span> and <span class="ph">[careful, targeted use of fertiliser and crop protection]</span>. Replace these with the methods you actually use.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACTIVITIES -->
+<section id="activities" class="section tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Our Farm Activities</p>
+      <h2>What we grow and raise</h2>
+      <p class="lede">Six connected activities share the same land, water and workforce, so nothing on the farm goes to waste.</p>
+    </div>
+    <div class="grid" id="actGrid"></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Our Products</p>
+      <h2>Fresh from the farm</h2>
+      <p class="lede">Choose a product to ask about availability, quantity and delivery. Prices are a guide and can change with the season.</p>
+    </div>
+    <div class="filters" id="filters" role="group" aria-label="Filter products"></div>
+    <div class="grid" id="prodGrid" aria-live="polite"></div>
+    <p class="note">Bulk orders and regular supply are available. Ask us for a quote.</p>
+  </div>
+</section>
+
+<!-- PARTNER -->
+<div class="wrap" style="padding-bottom:84px">
+  <div class="band">
+    <div>
+      <h2>Partner or invest with us</h2>
+      <p>We welcome buyers, distributors, out-growers, training partners and investors who share our focus on quality and sustainable growth. Tell us what you have in mind and we will reply with next steps.</p>
+    </div>
+    <div class="actions">
+      <a class="btn light" href="#contact" data-go="contact" data-type="Partnership">Partnership enquiry</a>
+      <a class="btn outline-light" href="#contact" data-go="contact" data-type="Investment enquiry">Investment enquiry</a>
+    </div>
+  </div>
+</div>
+
+<!-- WHY -->
+<section id="why" class="section tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2>Good food, reliably supplied</h2>
+      <p class="lede">Here is what customers can expect when they buy from <span data-bind="name">Agro Farm</span>.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div><div><h3>Consistent quality</h3><p>Every order is sorted and checked before it leaves the farm.</p></div></div>
+      <div class="why"><div class="ic"><svg viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14"/><path d="M5 19l7-7"/></svg></div><div><h3>Responsible farming</h3><p>We care for soil, water and animals so the farm can keep producing.</p></div></div>
+      <div class="why"><div class="ic"><svg viewBox="0 0 24 24"><path d="M3 7h11v9H3z"/><path d="M14 10h4l3 3v3h-7"/><circle cx="7" cy="18" r="1.6"/><circle cx="17" cy="18" r="1.6"/></svg></div><div><h3>Reliable supply</h3><p>Planned planting and harvest cycles help repeat buyers plan ahead.</p></div></div>
+      <div class="why"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14c1 2 2.5 3 4 3s3-1 4-3"/><path d="M9 9.5h.01M15 9.5h.01"/></svg></div><div><h3>Customer care</h3><p>We answer enquiries quickly by WhatsApp, phone and email.</p></div></div>
+      <div class="why"><div class="ic"><svg viewBox="0 0 24 24"><path d="M12 21v-9"/><path d="M12 12c0-4-3-6-7-6 0 4 3 6 7 6"/><path d="M12 14c0-3 2-5 6-5 0 3-2 5-6 5"/></svg></div><div><h3>Clear, fair pricing</h3><p>You see the price and the unit before you order. No surprises.</p></div></div>
+      <div class="why"><div class="ic"><svg viewBox="0 0 24 24"><circle cx="16" cy="8" r="3"/><circle cx="8" cy="9" r="3"/><path d="M2 20c0-3 3-5 6-5s6 2 6 5"/><path d="M14 15c3 0 8 1 8 5"/></svg></div><div><h3>Growing agriculture</h3><p>We share know-how with partners, out-growers and young farmers.</p></div></div>
+    </div>
+    <h3 class="how-h">How ordering works</h3>
+    <ol class="steps">
+      <li><b>Send an enquiry</b><span>Use the form, WhatsApp, phone or email.</span></li>
+      <li><b>Confirm details</b><span>We confirm availability, quantity and price.</span></li>
+      <li><b>We harvest and pack</b><span>Your order is prepared fresh and checked.</span></li>
+      <li><b>Pick up or delivery</b><span>Collect from the farm or arrange delivery.</span></li>
+    </ol>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Gallery</p>
+      <h2>Life on the farm</h2>
+      <p class="lede">Farmland, crops, animals, harvest time and fresh produce. Select a picture to view it larger.</p>
+    </div>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section id="news" class="section tint">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">News and Updates</p>
+      <h2>Harvest updates and farming tips</h2>
+      <p class="lede">Announcements, seasonal updates and practical advice from the farm.</p>
+    </div>
+    <div class="grid" id="newsGrid"></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Contact Us</p>
+      <h2>Place an order or ask a question</h2>
+      <p class="lede">Fill in the form and send your enquiry by WhatsApp or email. We usually reply the same day.</p>
+    </div>
+    <div class="contact-grid">
+      <div>
+        <form class="panel" id="form" novalidate autocomplete="on">
+          <h3>Send an enquiry</h3>
+          <div class="two">
+            <div class="field"><label for="f-name">Full name</label><input id="f-name" name="name" type="text" maxlength="80" autocomplete="name" required><div class="err" data-for="name" role="alert"></div></div>
+            <div class="field"><label for="f-phone">Phone / WhatsApp</label><input id="f-phone" name="phone" type="tel" maxlength="20" autocomplete="tel" placeholder="+234 …"><div class="err" data-for="phone" role="alert"></div></div>
+          </div>
+          <div class="field"><label for="f-email">Email (optional if you gave a phone number)</label><input id="f-email" name="email" type="email" maxlength="120" autocomplete="email"><div class="err" data-for="email" role="alert"></div></div>
+          <div class="two">
+            <div class="field"><label for="f-type">Enquiry type</label>
+              <select id="f-type" name="type">
+                <option>Place an order</option><option>Product enquiry</option><option>Partnership</option><option>Investment enquiry</option><option>Visit the farm</option><option>Other</option>
+              </select></div>
+            <div class="field"><label for="f-product">Product (optional)</label><select id="f-product" name="product"><option value="">Not sure yet</option></select></div>
+          </div>
+          <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" maxlength="1000" placeholder="Tell us what you need, how much and when."></textarea><div class="err" data-for="message" role="alert"></div></div>
+          <div class="hp" aria-hidden="true"><label for="f-website">Leave this field empty</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="btn" type="submit">Prepare my enquiry</button>
+          <p class="hint" style="margin-top:12px">Your details are only used to reply to this enquiry.</p>
+          <div id="result" hidden tabindex="-1"></div>
+        </form>
+      </div>
+      <div>
+        <div class="panel">
+          <h3>Get in touch</h3>
+          <ul class="info-list">
+            <li><b>Phone</b><a data-tel href="#contact"><span data-bind="phone">+234 800 000 0000</span></a></li>
+            <li><b>WhatsApp</b><a class="btn small" data-wa href="#contact" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.200 2.200 1.300.3.1.5.1.6-.1l.9-1.100c.2-.3.4-.2.6-.1l1.900.9c.3.1.5.2.5.4.1.2.1.8-.1 1.400z"/></svg>Chat on WhatsApp</a></li>
+            <li><b>Email</b><span data-bind="email">info@agrofarm.example</span></li>
+            <li><b>Farm location</b><span data-bind="address">[Farm address]</span></li>
+            <li><b>Opening hours</b><span data-bind="hours">Mon – Sat, 8:00am – 5:00pm</span></li>
+          </ul>
+          <div class="social" aria-label="Social media">
+            <a data-social="facebook" href="#contact" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path class="f" d="M14 8h2V5h-2.5C11 5 10 6.500 10 8.500V10H8v3h2v6h3v-6h2.200l.5-3H13V8.700c0-.500.300-.700 1-.700z"/></svg></a>
+            <a data-social="instagram" href="#contact" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.600"/><circle class="f" cx="16.800" cy="7.200" r="1"/></svg></a>
+            <a data-social="tiktok" href="#contact" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v10.500a3 3 0 11-3-3"/><path d="M14 4c.300 2.300 1.800 3.700 4 3.900"/></svg></a>
+            <a data-social="youtube" href="#contact" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path class="f" d="M10.500 9.500v5l4.500-2.500z"/></svg></a>
+          </div>
+        </div>
+        <div class="map">
+          <svg viewBox="0 0 400 220" role="img" aria-label="Stylised map showing the farm location">
+            <rect width="400" height="220" fill="#e4edd6"/>
+            <path d="M0 150Q120 110 240 140T400 110V220H0Z" fill="#cfe0b9"/>
+            <path d="M-10 60L410 120" stroke="#fff" stroke-width="12"/><path d="M150 -10L230 230" stroke="#fff" stroke-width="9"/><path d="M-10 190L410 170" stroke="#f3ecd9" stroke-width="6"/>
+            <rect x="262" y="40" width="80" height="50" fill="#bcd69a" opacity=".8"/><rect x="40" y="130" width="70" height="50" fill="#bcd69a" opacity=".8"/>
+            <g transform="translate(205 95)"><path d="M0 0C-16 -22 -22 -30 -22 -40a22 22 0 0144 0c0 10 -6 18 -22 40z" fill="#c0392b"/><circle cy="-40" r="8" fill="#fff"/></g>
+          </svg>
+          <a class="btn small ghost" id="mapLink" href="https://www.google.com/maps" target="_blank" rel="noopener">Open in Google Maps</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <h4 data-bind="name">Agro Farm</h4>
+        <p>Growing quality food and building a sustainable future through responsible crop, livestock, poultry and fish farming.</p>
+        <div class="social" aria-label="Social media links">
+          <a data-social="facebook" href="#contact" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path class="f" d="M14 8h2V5h-2.5C11 5 10 6.500 10 8.500V10H8v3h2v6h3v-6h2.200l.5-3H13V8.700c0-.500.300-.700 1-.700z"/></svg></a>
+          <a data-social="instagram" href="#contact" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="5"/><circle cx="12" cy="12" r="3.600"/><circle class="f" cx="16.800" cy="7.200" r="1"/></svg></a>
+          <a data-social="tiktok" href="#contact" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v10.500a3 3 0 11-3-3"/><path d="M14 4c.300 2.300 1.800 3.700 4 3.900"/></svg></a>
+          <a data-social="youtube" href="#contact" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path class="f" d="M10.500 9.500v5l4.500-2.500z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Explore</h4><ul>
+        <li><a href="#about" data-go="about">About us</a></li><li><a href="#activities" data-go="activities">Our farm</a></li><li><a href="#products" data-go="products">Products</a></li><li><a href="#gallery" data-go="gallery">Gallery</a></li><li><a href="#news" data-go="news">News and updates</a></li>
+      </ul></div>
+      <div><h4>Contact</h4><ul>
+        <li data-bind="phone">+234 800 000 0000</li><li data-bind="email">info@agrofarm.example</li><li data-bind="address">[Farm address]</li>
+      </ul></div>
+    </div>
+    <p class="copy">© <span id="yr"></span> <span data-bind="name">Agro Farm</span>. All rights reserved.</p>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#contact" target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm5.2 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.2-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.1.1.3 0 .5l-.3.5-.4.4c-.1.1-.3.3-.1.6.2.3.7 1.2 1.5 1.9 1 .9 1.9 1.2 2.2 1.3.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.4.1.2.1.8-.1 1.4z"/></svg>
+  <span>WhatsApp</span>
+</a>
+
+<div id="lb" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <div class="stage" id="lbStage"></div>
+  <p id="lbCap"></p>
+  <div class="ctl"><button type="button" id="lbPrev">Previous</button><button type="button" id="lbNext">Next</button><button type="button" id="lbClose">Close</button></div>
+</div>
+
+<script>
+/* =====================================================================
+   EDIT HERE: business details, products, news and gallery live in this
+   block. Replace the placeholder text and the example prices.
+   To use a real photo for any item, set its "photo" field to an image
+   file or address; leave it empty to show the drawn illustration.
+   ===================================================================== */
+const CONFIG = {
+  name: "Agro Farm",
+  phone: "+234 800 000 0000",
+  whatsapp: "2348000000000",            // digits only, with country code
+  email: "info@agrofarm.example",
+  address: "[Farm address], [Town], [State]",
+  mapQuery: "[Farm address], [Town], [State]",
+  hours: "Mon – Sat, 8:00am – 5:00pm",
+  currency: "₦",
+  formEndpoint: "",                      // optional: a form service address that accepts JSON
+  social: {
+    facebook: "https://www.facebook.com/",
+    instagram: "https://www.instagram.com/",
+    tiktok: "https://www.tiktok.com/",
+    youtube: "https://www.youtube.com/"
+  }
+};
+
+// category: Crops | Vegetables | Poultry | Livestock | Fish
+// price: a number, or null to show "Price on request"
+const PRODUCTS = [
+  { name: "Fresh eggs", category: "Poultry", art: "eggs", photo: "", price: 4500, unit: "per crate of 30", desc: "Farm-fresh table eggs, collected daily and graded by size." },
+  { name: "Broiler chickens", category: "Poultry", art: "chicken", photo: "", price: 6500, unit: "per bird, live", desc: "Healthy birds raised on balanced feed. Dressed birds on request." },
+  { name: "Fresh catfish", category: "Fish", art: "catfish", photo: "", price: 3500, unit: "per kg", desc: "Pond-raised catfish, sold live or freshly processed." },
+  { name: "Maize", category: "Crops", art: "maize", photo: "", price: 38000, unit: "per 50 kg bag", desc: "Clean, dry maize grain, suitable for milling and animal feed." },
+  { name: "Cassava tubers", category: "Crops", art: "cassava", photo: "", price: 25000, unit: "per bag", desc: "Freshly harvested tubers for garri, flour and home cooking." },
+  { name: "Tomatoes", category: "Vegetables", art: "tomato", photo: "", price: 18000, unit: "per basket", desc: "Firm, ripe tomatoes picked at the right stage for market or kitchen." },
+  { name: "Fresh peppers", category: "Vegetables", art: "pepper", photo: "", price: 15000, unit: "per basket", desc: "A mix of sweet and hot peppers, sorted and packed in baskets." },
+  { name: "Leafy vegetables", category: "Vegetables", art: "leafy", photo: "", price: 1500, unit: "per bunch", desc: "Freshly cut leafy greens, harvested the same day they are sold." },
+  { name: "Goats and cattle", category: "Livestock", art: "scene:cattle", photo: "", price: null, unit: "", desc: "Healthy animals for breeding, meat or festive orders. Ask about current stock." }
+];
+
+const ACTIVITIES = [
+  { name: "Crop production", scene: "maize", photo: "", desc: "Maize, cassava and other staple crops grown in planned seasons and harvested at the right time.", tags: ["Maize", "Cassava", "Staples"] },
+  { name: "Livestock farming", scene: "cattle", photo: "", desc: "Goats and cattle raised on pasture with clean water, regular health checks and proper housing.", tags: ["Goats", "Cattle"] },
+  { name: "Poultry", scene: "poultry", photo: "", desc: "Layers for eggs and broilers for meat, kept in well-ventilated houses with balanced feed.", tags: ["Eggs", "Broilers"] },
+  { name: "Fish farming", scene: "fish", photo: "", desc: "Catfish grown in managed ponds, with attention to water quality and feeding.", tags: ["Catfish", "Ponds"] },
+  { name: "Vegetable cultivation", scene: "veg", photo: "", desc: "Tomatoes, peppers and leafy greens grown in beds and harvested fresh for local buyers.", tags: ["Tomatoes", "Peppers", "Greens"] },
+  { name: "Packing and supply", scene: "produce", photo: "", desc: "Sorting, packing and dispatch for households, traders, restaurants and institutions.", tags: ["Bulk orders", "Regular supply"] }
+];
+
+const GALLERY = [
+  { title: "Farmland at sunrise", scene: "field", photo: "", wide: true },
+  { title: "Rows of maize", scene: "maize", photo: "" },
+  { title: "Cattle grazing", scene: "cattle", photo: "" },
+  { title: "The poultry house", scene: "poultry", photo: "" },
+  { title: "Fish pond", scene: "fish", photo: "" },
+  { title: "Vegetable beds", scene: "veg", photo: "" },
+  { title: "Harvest time", scene: "harvest", photo: "", wide: true },
+  { title: "Fresh produce, ready to pack", scene: "produce", photo: "" },
+  { title: "The farmstead", scene: "barn", photo: "" },
+  { title: "Our farm team at work", scene: "workers", photo: "" }
+];
+
+const NEWS = [
+  { tag: "Harvest update", date: "2026-10-05", title: "Maize harvest is under way", scene: "harvest", photo: "",
+    excerpt: "Harvesting has started on our first maize plots. Dry grain will be available in bags from the end of the month.",
+    body: ["Our team began harvesting the first maize plots this week. After harvest the cobs are dried, shelled and cleaned before bagging.", "Buyers who want to reserve bags for the season can send us an enquiry with the quantity they need."] },
+  { tag: "Farming tip", date: "2026-09-22", title: "Simple ways to save water in vegetable beds", scene: "veg", photo: "",
+    excerpt: "Small changes in how and when you water can cut waste and give stronger plants.",
+    body: ["Water early in the morning so less is lost to evaporation, and apply it at the base of the plant rather than over the leaves.", "Cover bare soil with mulch such as dry grass or crop residue. It keeps the soil cooler, slows drying and reduces weeds. Group plants with similar water needs in the same bed."] },
+  { tag: "Announcement", date: "2026-09-10", title: "Weekly produce orders: new pick-up and delivery days", scene: "produce", photo: "",
+    excerpt: "We are setting fixed days for weekly orders so buyers can plan with confidence.",
+    body: ["Regular customers can now book a weekly supply of eggs, vegetables and fish for set days.", "Send us your usual quantities and preferred day. We will confirm availability and pricing before your first order."] },
+  { tag: "Agriculture news", date: "2026-08-28", title: "Why a soil test before planting saves money", scene: "field", photo: "",
+    excerpt: "A basic soil test shows what your land needs, so you apply only what is useful.",
+    body: ["A soil test reports acidity and the main nutrient levels. With that information you can choose the right fertiliser and amount instead of guessing.", "Take samples from several spots in the field, mix them, and send a portion to a laboratory. Repeat the test every year or before each major planting season."] }
+];
+
+/* ---------- illustrations (replace with real photos via the "photo" fields) ---------- */
+let uid = 0;
+function wrapSvg(inner, a, b){
+  a = a || '#bfe0ee'; b = b || '#fbf1d2';
+  const id = 'sk' + (uid++);
+  return '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true"><defs><linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="'+a+'"/><stop offset="1" stop-color="'+b+'"/></linearGradient></defs><rect width="400" height="300" fill="url(#'+id+')"/>'+inner+'<rect width="400" height="300" fill="url(#vig)"/><rect width="400" height="300" filter="url(#grain)" opacity=".16"/></svg>';
+}
+const sunEl = (x,y,r,c) => { x=x||310; y=y||64; r=r||24; c=c||'#ffd25e'; return '<circle cx="'+x+'" cy="'+y+'" r="'+(r+14)+'" fill="'+c+'" opacity=".3"/><circle cx="'+x+'" cy="'+y+'" r="'+r+'" fill="'+c+'"/>'; };
+const hillsEl = () => '<path d="M0 170Q70 120 150 150T300 140T400 160V300H0Z" fill="#a9cf78"/><path d="M0 190Q90 150 190 178T400 172V300H0Z" fill="#7fb25a"/>';
+const groundEl = (y,c) => '<rect y="'+y+'" width="400" height="'+(300-y)+'" fill="'+c+'"/>';
+function furrows(y0,n,c){ let s=''; for(let i=0;i<=n;i++){ const k=i/n-.5; s+='<path d="M'+(200+k*40)+' '+y0+'L'+(200+k*640)+' 300" stroke="'+c+'" stroke-width="5" opacity=".5"/>'; } return s; }
+function stalk(x,y,s){ return '<g transform="translate('+x+' '+y+') scale('+s+')"><path d="M0 0V-52" stroke="#4d8f3b" stroke-width="3"/><path d="M0 -14Q-18 -22 -24 -38" stroke="#3f7d33" stroke-width="3" fill="none"/><path d="M0 -26Q18 -32 24 -50" stroke="#3f7d33" stroke-width="3" fill="none"/><path d="M0 -38Q-14 -46 -18 -60" stroke="#3f7d33" stroke-width="3" fill="none"/><ellipse cx="4" cy="-28" rx="3.5" ry="9" fill="#e9c74a"/></g>'; }
+function cow(x,y,s,f){ f=f||1; return '<g transform="translate('+x+' '+y+') scale('+(s*f)+' '+s+')"><ellipse cx="2" cy="17" rx="52" ry="6" fill="#000" opacity=".25"/><path d="M-30 -2l-2 18h8l3-18zM-8 -2l-1 18h8l2-18zM18 -2l1 18h8l-1-18zM34 -4l2 20h7l-2-20z" fill="#bdb3a1"/><path d="M-42 -30Q-44 -48 -22 -48H22Q42 -48 44 -32Q46 -12 36 -4Q0 2 -34 -4Q-44 -10 -42 -30Z" fill="url(#cowb)"/><path d="M-30 -46Q-18 -50 -8 -42Q-6 -26 -20 -22Q-34 -24 -30 -46ZM14 -48Q30 -48 38 -36Q34 -26 22 -28Q10 -34 14 -48Z" fill="#2a2420"/><path d="M40 -44Q58 -52 70 -40Q76 -30 70 -22Q60 -18 46 -22Z" fill="url(#cowb)"/><path d="M64 -30Q76 -28 76 -20Q72 -14 62 -16Z" fill="#e7b3a8"/><path d="M48 -44l-6-10l8 4zM60 -46l2-10l4 8z" fill="#2a2420"/><circle cx="58" cy="-36" r="2.2" fill="#1a1512"/><path d="M-42 -30q-10 8-8 26" stroke="#2a2420" stroke-width="3" fill="none"/></g>'; }
+function hen(x,y,s,c,f){ f=f||1; return '<g transform="translate('+x+' '+y+') scale('+(s*f)+' '+s+')"><ellipse cx="0" cy="14" rx="26" ry="4" fill="#000" opacity=".22"/><path d="M-20 -22Q-34 -50 -42 -46Q-40 -30 -30 -16Z" fill="'+c+'"/><path d="M-22 -18Q-40 -36 -46 -30Q-40 -18 -26 -12Z" fill="#000" opacity=".18"/><ellipse cx="0" cy="-16" rx="24" ry="17" fill="'+c+'"/><ellipse cx="-2" cy="-10" rx="20" ry="10" fill="#000" opacity=".12"/><ellipse cx="2" cy="-24" rx="14" ry="7" fill="#fff" opacity=".18"/><path d="M-6 -18Q8 -4 22 -20Q10 -10 -6 -18Z" fill="#000" opacity=".15"/><circle cx="18" cy="-36" r="9" fill="'+c+'"/><path d="M12 -43q2-8 6-3q3-6 5 2z" fill="#d8402f"/><path d="M26 -37l9 3-9 3z" fill="#f0a030"/><path d="M24 -30q2 8 -2 8q-4 -2 2 -8z" fill="#d8402f"/><circle cx="21" cy="-38" r="1.8" fill="#1a1512"/><path d="M-4 -1v14M6 -1v14M-8 14h8M2 14h8" stroke="#d99a2b" stroke-width="3" stroke-linecap="round" fill="none"/></g>'; }
+function fish(x,y,s,f,c){ return '<g transform="translate('+x+' '+y+') scale('+(s*f)+' '+s+')"><ellipse cx="0" cy="0" rx="30" ry="11" fill="'+c+'"/><path d="M-26 0L-44 -12V12z" fill="'+c+'"/><circle cx="18" cy="-3" r="2.2" fill="#fff"/><circle cx="18" cy="-3" r="1" fill="#222"/><path d="M28 2q10 0 16 6M28 4q10 4 14 12" stroke="'+c+'" stroke-width="1.6" fill="none"/></g>'; }
+function person(x,y,s,c){ return '<g transform="translate('+x+' '+y+') scale('+s+')"><rect x="-11" y="-38" width="22" height="26" rx="7" fill="'+c+'"/><rect x="-9" y="-14" width="7" height="20" rx="3" fill="#3b4a5a"/><rect x="2" y="-14" width="7" height="20" rx="3" fill="#3b4a5a"/><circle cy="-46" r="8" fill="#8a5a3a"/><path d="M-17 -48h34l-6-9h-22z" fill="#e8c76a"/><path d="M11 -34l14 16" stroke="#8a5a3a" stroke-width="5" stroke-linecap="round"/></g>'; }
+function crate(x,y,w,fill,n){ let s='<rect x="'+x+'" y="'+y+'" width="'+w+'" height="34" rx="3" fill="#9b6b3e"/><path d="M'+x+' '+(y+12)+'H'+(x+w)+'M'+x+' '+(y+24)+'H'+(x+w)+'" stroke="#7b5232" stroke-width="2"/>'; for(let i=0;i<n;i++){ s+='<circle cx="'+(x+10+i*((w-20)/(n-1)))+'" cy="'+(y-4)+'" r="11" fill="'+fill+'"/>'; } return s; }
+
+const SCENES = {
+  field: () => wrapSvg(sunEl()+hillsEl()+groundEl(200,'#6aa24a')+furrows(200,10,'#3f7a38')),
+  maize: () => { let s=sunEl(70,60,20)+hillsEl()+groundEl(195,'#6b9f48'); [[205,.7],[228,.95],[256,1.25],[288,1.6]].forEach(r=>{ const step=48*r[1]; for(let x=-10+(r[1]*7)%30;x<420;x+=step){ s+=stalk(x,r[0],r[1]); } }); return wrapSvg(s); },
+  cattle: () => { let s=sunEl()+hillsEl()+groundEl(205,'#78ad52')+'<g stroke="#8a6238" stroke-width="3"><path d="M0 204H400M0 218H400"/>'; for(let x=10;x<400;x+=55){ s+='<path d="M'+x+' 196V232"/>'; } s+='</g>'+cow(120,262,1.25,1)+cow(285,246,.95,-1); return wrapSvg(s); },
+  poultry: () => wrapSvg(sunEl(70,60,20)+hillsEl()+groundEl(210,'#a9b86a')+'<rect x="230" y="120" width="130" height="90" fill="#a8683a"/><path d="M218 126L295 78L372 126Z" fill="#7b4a28"/><rect x="278" y="152" width="30" height="58" fill="#5a3a20"/><rect x="244" y="142" width="22" height="18" fill="#f4e7c2"/><rect x="322" y="142" width="22" height="18" fill="#f4e7c2"/>'+hen(90,262,1.3,'#f2e6d0',1)+hen(170,248,1,'#c98a52',-1)+hen(200,280,1.1,'#f6efe0',1)),
+  fish: () => { let s=groundEl(70,'#7fb25a')+'<rect y="96" width="400" height="204" fill="#3f93a8"/><rect y="96" width="400" height="204" fill="#2d6f86" opacity=".35"/>'; [[80,150],[250,140],[160,210],[320,230]].forEach(p=>{ s+='<ellipse cx="'+p[0]+'" cy="'+p[1]+'" rx="34" ry="7" fill="none" stroke="#fff" stroke-width="2" opacity=".35"/>'; }); s+=fish(130,170,1.4,1,'#6f7c88')+fish(280,205,1.1,-1,'#8a97a2')+fish(90,245,1,1,'#5d6b78')+'<path d="M20 96v-30M30 96v-40M370 96v-34M382 96v-24" stroke="#4d7f3b" stroke-width="4"/>'; return wrapSvg(s,'#bfe0ee','#e8f2dc'); },
+  veg: () => { let s=sunEl(330,60,20)+hillsEl()+groundEl(190,'#8a6238'); [[205,16,.7],[232,20,.95],[266,24,1.25]].forEach((r,i)=>{ s+='<rect x="0" y="'+(r[0]-8)+'" width="400" height="'+(10+i*8)+'" fill="#6b4a2a"/>'; for(let x=14+i*8;x<400;x+=r[1]*2.6){ s+='<circle cx="'+x+'" cy="'+(r[0]-10*r[2])+'" r="'+(11*r[2])+'" fill="#4f9a3d"/><circle cx="'+(x+5*r[2])+'" cy="'+(r[0]-4*r[2])+'" r="'+(5*r[2])+'" fill="#d8402f"/>'; } }); return wrapSvg(s); },
+  harvest: () => { let s=sunEl(200,150,46,'#ffb347')+'<path d="M0 170Q100 150 200 168T400 160V300H0Z" fill="#d9a441"/>'+groundEl(215,'#c88f35'); for(let x=8;x<400;x+=22){ s+='<path d="M'+x+' 300V196" stroke="#a9742a" stroke-width="3"/><ellipse cx="'+x+'" cy="190" rx="4" ry="12" fill="#e8c55a"/>'; } s+='<rect x="60" y="238" width="70" height="46" rx="14" fill="#e9dcc0"/><rect x="250" y="232" width="78" height="52" rx="14" fill="#dccfae"/><path d="M80 254h30M270 250h36" stroke="#9b8a62" stroke-width="3"/>'; return wrapSvg(s,'#f2a65a','#fbe3a8'); },
+  produce: () => wrapSvg('<rect y="190" width="400" height="110" fill="#8a6238"/><rect y="186" width="400" height="10" fill="#6f4b28"/>'+crate(30,208,100,'#d8402f',4)+crate(150,214,100,'#f0a030',4)+crate(270,208,100,'#6fae3f',4)+'<circle cx="60" cy="150" r="14" fill="#c98a52"/><ellipse cx="320" cy="150" rx="12" ry="18" fill="#e9c74a"/>','#f6ecd2','#efe0b8'),
+  barn: () => wrapSvg(sunEl(60,60,20)+hillsEl()+groundEl(210,'#6aa24a')+'<rect x="130" y="130" width="150" height="90" fill="#9a4a2f"/><path d="M116 134L205 78L294 134Z" fill="#6f3320"/><rect x="176" y="164" width="58" height="56" fill="#f3e6c8"/><path d="M176 164L234 220M234 164L176 220" stroke="#9a4a2f" stroke-width="4"/><rect x="298" y="96" width="32" height="124" fill="#cdbf9f"/><path d="M296 96a18 12 0 0136 0z" fill="#8a7a5c"/>'),
+  workers: () => { let s=sunEl(330,60,20)+hillsEl()+groundEl(195,'#6b9f48')+furrows(195,9,'#3f7a38'); s+=person(90,262,1.5,'#d8402f')+person(210,238,1.2,'#2e7fb8')+person(320,258,1.4,'#e0a030')+person(150,214,.9,'#7b4a9a'); return wrapSvg(s); }
+};
+function prodArt(k){
+  const bg = {eggs:'#f3e6c8',tomato:'#f6d9d0',maize:'#f4e7a6',catfish:'#cde4ea',chicken:'#ecd9c0',pepper:'#f1d6c0',cassava:'#e6d3bd',leafy:'#d5e8c5'}[k] || '#eef3e6';
+  let s='';
+  if(k==='eggs'){ for(let r=0;r<2;r++){ for(let c=0;c<3;c++){ s+='<ellipse cx="'+(120+c*70)+'" cy="'+(105+r*70)+'" rx="26" ry="32" fill="#fbf6ea" stroke="#d9c9a3" stroke-width="3"/>'; } } s+='<rect x="75" y="228" width="250" height="14" rx="6" fill="#d9c9a3"/>'; }
+  if(k==='tomato'){ [[140,130,50],[250,140,46],[190,210,44],[290,220,34]].forEach(t=>{ s+='<circle cx="'+t[0]+'" cy="'+t[1]+'" r="'+t[2]+'" fill="#d8402f"/><path d="M'+(t[0]-14)+' '+(t[1]-t[2]+6)+'l14 8 14-8-8 12 8 6-14-4-14 4 8-6z" fill="#3f7d33"/>'; }); }
+  if(k==='maize'){ [[110,0],[200,-6],[290,4]].forEach(m=>{ s+='<g transform="translate('+m[0]+' 150) rotate('+(m[1]*3)+')"><path d="M-26 70q-14-60 0-120q26 0 28 40q10 50-28 80z" fill="#4f9a3d"/><rect x="-12" y="-70" width="40" height="130" rx="20" fill="#eac84a"/><path d="M-4 -50v100M8 -50v100M20 -50v100" stroke="#c9a52e" stroke-width="2"/></g>'; }); }
+  if(k==='catfish'){ s+='<ellipse cx="200" cy="150" rx="112" ry="46" fill="#5d6b78"/><path d="M96 150L40 100V200z" fill="#5d6b78"/><ellipse cx="200" cy="168" rx="100" ry="24" fill="#a9b4bd"/><circle cx="278" cy="136" r="7" fill="#fff"/><circle cx="278" cy="136" r="3" fill="#222"/><path d="M308 150q40 0 62 22M308 158q36 14 50 40" stroke="#5d6b78" stroke-width="4" fill="none"/>'; }
+  if(k==='chicken'){ s+='<ellipse cx="190" cy="160" rx="82" ry="58" fill="#f6efe0"/><path d="M112 140q-52-30-64-84q52 18 82 62z" fill="#e8dcc2"/><circle cx="262" cy="96" r="34" fill="#f6efe0"/><path d="M244 66q12-30 24-4q14-18 20 8" fill="#d8402f"/><path d="M294 96l30 10-30 10z" fill="#f0a030"/><circle cx="272" cy="90" r="5" fill="#222"/><path d="M170 215v40M210 215v40" stroke="#e0a030" stroke-width="8" stroke-linecap="round"/>'; }
+  if(k==='pepper'){ [[130,0],[210,12],[290,-8]].forEach((p,i)=>{ s+='<g transform="translate('+p[0]+' 150) rotate('+p[1]+')"><path d="M0 -70q40 10 34 70q-8 56-34 78q-28-22-34-78q-6-60 34-70z" fill="'+(i===1?'#e9a22a':'#d8402f')+'"/><path d="M0 -70q-4-18 8-28" stroke="#3f7d33" stroke-width="7" fill="none" stroke-linecap="round"/></g>'; }); }
+  if(k==='cassava'){ [[110,-14],[200,0],[290,12]].forEach(c=>{ s+='<g transform="translate('+c[0]+' 150) rotate('+c[1]+')"><path d="M-22 -80q22-14 44 0q16 70 -4 140q-18 20 -36 0q-20-70 -4-140z" fill="#a9703f"/><path d="M-12 -40q12 4 24 0M-14 0q14 4 28 0M-12 40q12 4 24 0" stroke="#7b4f2a" stroke-width="3" fill="none"/></g>'; }); }
+  if(k==='leafy'){ [[0,0],[1,0],[2,0],[3,0],[4,0]].forEach((l,i)=>{ s+='<ellipse cx="200" cy="150" rx="26" ry="84" fill="'+(i%2?'#4f9a3d':'#3f7d33')+'" transform="rotate('+(-72+i*36)+' 200 215)"/>'; }); s+='<rect x="186" y="200" width="28" height="60" rx="6" fill="#7b5232"/>'; }
+  return '<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true"><rect width="400" height="300" fill="'+bg+'"/>'+s+'</svg>';
+}
+function artHtml(scene, photo, label, art){
+  if(photo){ return '<img src="'+photo+'" alt="'+label.replace(/"/g,'&quot;')+'" loading="lazy">'; }
+  if(art && art.indexOf('scene:')!==0){ return prodArt(art); }
+  const key = art ? art.slice(6) : scene;
+  return (SCENES[key] || SCENES.field)();
+}
+
+/* ---------- hero slider scenes (set a photo in HERO_PHOTOS to replace a drawing) ---------- */
+// EDIT HERE: one image per slide, in order. Leave '' to keep the drawn scene.
+const HERO_PHOTOS = ['', '', '', '', ''];
+const rnd = n => { const t = Math.sin(n*127.1+311.7)*43758.5453; return t - Math.floor(t); };
+const HS = inner => '<svg viewBox="0 0 1200 640" preserveAspectRatio="xMidYMid slice" role="img" aria-hidden="true">'+inner+'<rect width="1200" height="640" fill="url(#vigH)"/><rect width="1200" height="640" filter="url(#grain)" opacity=".2"/></svg>';
+const cloud = (x,y,sc,cls,op) => '<g transform="translate('+x+' '+y+') scale('+sc+')"><g class="cloud '+cls+'" opacity="'+op+'" filter="url(#soft)"><ellipse cx="0" cy="0" rx="90" ry="20" fill="#fff"/><ellipse cx="-40" cy="-14" rx="50" ry="22" fill="#fff"/><ellipse cx="30" cy="-18" rx="56" ry="26" fill="#fff"/></g></g>';
+const tree = (x,y,s,c) => '<g transform="translate('+x+' '+y+') scale('+s+')"><rect x="-3" y="-4" width="6" height="22" fill="#4a3320"/><circle cx="0" cy="-22" r="22" fill="'+c+'"/><circle cx="-14" cy="-10" r="15" fill="'+c+'"/><circle cx="15" cy="-10" r="16" fill="'+c+'"/><circle cx="-6" cy="-30" r="12" fill="#fff" opacity=".07"/></g>';
+function blades(n,y,hMin,hVar,cols,seed,x0,x1){ let s=''; for(let i=0;i<n;i++){ const x=x0+(i+rnd(i+seed))*(x1-x0)/n, h=hMin+rnd(i+seed+50)*hVar, b=(rnd(i+seed+90)-.5)*44; s+='<path d="M'+x+' '+y+'Q'+(x+b*.4)+' '+(y-h*.6)+' '+(x+b)+' '+(y-h)+'" stroke="'+cols[i%cols.length]+'" stroke-width="'+(2+rnd(i+seed+7)*2.5)+'" fill="none" stroke-linecap="round"/>'; } return s; }
+const birds = pts => pts.map((p,i) => '<path class="bird" style="animation-delay:-'+(i*4)+'s" d="M'+p[0]+' '+p[1]+'q9-9 18 0q9-9 18 0" stroke="#27363c" stroke-width="2.2" fill="none" stroke-linecap="round"/>').join('');
+function stops(a){ return a.map(s => '<stop offset="'+s[0]+'" stop-color="'+s[1]+'"'+(s[2]!=null?' stop-opacity="'+s[2]+'"':'')+'/>').join(''); }
+const lg = (id,a) => '<linearGradient id="'+id+'" x1="0" y1="0" x2="0" y2="1">'+stops(a)+'</linearGradient>';
+const rg = (id,a) => '<radialGradient id="'+id+'">'+stops(a)+'</radialGradient>';
+
+function H1(){
+  let s='<defs>'+lg('h1a',[[0,'#4a82b4'],[.5,'#f0b88c'],[1,'#fbe5b4']])+rg('h1b',[[0,'#fff6d0'],[.3,'#ffe29a',.8],[1,'#ffd27a',0]])+lg('h1c',[[0,'#9dbf9f'],[1,'#7aa57c']])+lg('h1d',[[0,'#e8e2b0',.75],[1,'#e8e2b0',0]])+'</defs>';
+  s+='<rect width="1200" height="640" fill="url(#h1a)"/><circle cx="860" cy="340" r="380" fill="url(#h1b)"/><circle cx="860" cy="340" r="42" fill="#fff6d2"/>';
+  s+=cloud(300,120,1.6,'c1',.75)+cloud(900,90,1.2,'c2',.6)+cloud(620,190,.9,'c3',.5);
+  s+='<path d="M0 330Q160 280 340 322T700 312T1040 328T1200 300V420H0Z" fill="url(#h1c)"/><path d="M0 360Q200 322 420 352T820 342T1200 356V420H0Z" fill="#6f9f68"/>';
+  for(let i=0;i<14;i++){ s+=tree(40+i*88+rnd(i)*40,356+rnd(i+9)*8,.7+rnd(i+3)*.5,'#3f6f3e'); }
+  s+='<g transform="translate(130 330)"><rect width="76" height="40" fill="#8f432c"/><path d="M-8 2L38 -26L84 2Z" fill="#62301f"/><rect x="28" y="14" width="20" height="26" fill="#f1e2c0"/></g>';
+  s+='<rect y="362" width="1200" height="278" fill="#477f31"/>';
+  for(let k=-8;k<=14;k++){ const b1=k*150-300,b2=(k+1)*150-300,t1=700+(b1-700)*.05,t2=700+(b2-700)*.05; s+='<path d="M'+t1+' 372L'+t2+' 372L'+b2+' 640L'+b1+' 640Z" fill="'+(k%2?'#4f9238':'#438631')+'"/>'; }
+  s+='<rect y="365" width="1200" height="275" fill="url(#h1d)"/><path d="M860 340L120 640L520 640Z" fill="#fff" opacity=".07"/><path d="M860 340L520 640L760 640Z" fill="#fff" opacity=".06"/>';
+  s+=blades(80,648,40,80,['#2b5d27','#3d7a35','#244f22'],3,0,1200)+birds([[520,150],[600,120],[690,165]]);
+  return HS(s);
+}
+function H2(){
+  let s='<defs>'+lg('h2a',[[0,'#68aede'],[1,'#dcedf1']])+lg('h2b',[[0,'#a5cc7a'],[1,'#7fae5b']])+lg('h2c',[[0,'#7fae5b'],[1,'#5a9142']])+'</defs>';
+  s+='<rect width="1200" height="640" fill="url(#h2a)"/><circle cx="220" cy="150" r="60" fill="#fff" opacity=".55" filter="url(#soft)"/>';
+  s+=cloud(420,110,1.5,'c1',.8)+cloud(980,150,1.2,'c2',.65)+cloud(780,70,.8,'c3',.55);
+  s+='<path d="M0 300Q220 240 460 290T900 270T1200 300V420H0Z" fill="#8fb98a"/><path d="M0 340Q260 290 520 332T1200 320V440H0Z" fill="url(#h2b)"/>';
+  for(let i=0;i<9;i++){ s+=tree(60+i*140+rnd(i+4)*50,338+rnd(i)*10,.8+rnd(i+8)*.5,'#4a7d45'); }
+  s+='<rect y="345" width="1200" height="295" fill="url(#h2c)"/>';
+  s+='<g stroke="#7a5532" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M0 392H1200M0 414H1200"/>';
+  for(let x=20;x<1200;x+=110){ s+='<path d="M'+x+' 380V430"/>'; }
+  s+='</g>'+cow(520,432,1.1,1)+cow(280,560,2.6,1)+cow(720,520,2.1,-1)+cow(1000,590,3,1);
+  s+=blades(70,648,30,60,['#3f7a35','#5a9a3f','#2f6a2b'],21,0,1200);
+  for(let i=0;i<40;i++){ s+='<circle cx="'+(rnd(i+60)*1200)+'" cy="'+(470+rnd(i+90)*160)+'" r="'+(2+rnd(i)*2)+'" fill="'+(i%3?'#fff':'#ffd84a')+'" opacity=".85"/>'; }
+  return HS(s+birds([[800,180],[880,150]]));
+}
+function H3(){
+  let s='<defs>'+lg('h3a',[[0,'#f6cf94'],[1,'#d6e8ee']])+lg('h3b',[[0,'#7fae4e'],[1,'#5f9238']])+lg('h3c',[[0,'#3f6f3e'],[1,'#2f5a33']])+'</defs>';
+  s+='<rect width="1200" height="640" fill="url(#h3a)"/><circle cx="1000" cy="150" r="200" fill="#ffe7a8" opacity=".35" filter="url(#soft)"/>'+cloud(330,100,1.4,'c1',.7)+cloud(760,140,1,'c2',.55);
+  s+='<rect y="190" width="1200" height="200" fill="url(#h3c)"/>';
+  for(let i=0;i<16;i++){ s+=tree(i*80+rnd(i)*30,262+rnd(i+5)*14,1.8+rnd(i+2),'#2d5a31'); }
+  s+='<rect y="360" width="1200" height="280" fill="url(#h3b)"/><ellipse cx="460" cy="540" rx="520" ry="90" fill="#b99058" opacity=".75"/>';
+  s+='<g transform="translate(780 250)"><rect width="300" height="170" fill="#a56b3c"/>';
+  for(let x=14;x<300;x+=22){ s+='<path d="M'+x+' 0V170" stroke="#7d4f2a" stroke-width="2.5"/>'; }
+  s+='<path d="M-24 6L150 -70L324 6Z" fill="#6b4126"/><rect x="40" y="70" width="90" height="100" fill="#3a2515"/><path d="M40 170L10 205H160L130 170Z" fill="#8b5a30"/><rect x="190" y="50" width="70" height="56" fill="#f3e6c2"/><path d="M225 50V106M190 78H260" stroke="#a56b3c" stroke-width="4"/></g>';
+  s+='<g stroke="#8a8f94" stroke-width="2" opacity=".75">';
+  for(let x=0;x<740;x+=24){ s+='<path d="M'+x+' 440V520"/>'; }
+  s+='<path d="M0 450H740M0 480H740M0 510H740"/></g>';
+  s+=hen(170,590,2.6,'#b5532e',1)+hen(470,610,2.3,'#f3ead6',-1)+hen(640,560,1.8,'#8c4a2a',1)+hen(360,520,1.4,'#d9a05a',1)+hen(900,600,2.2,'#a8482a',-1);
+  s+='<ellipse cx="560" cy="632" rx="46" ry="10" fill="#7d7f83"/><path d="M520 632Q560 590 600 632Z" fill="#a9acb1"/>'+blades(70,648,30,60,['#3f7a35','#5a9a3f','#2f6a2b'],31,0,1200);
+  s+='<path d="M1000 150L600 640L900 640Z" fill="#fff" opacity=".06"/>';
+  return HS(s+birds([[300,180],[360,160]]));
+}
+function H4(){
+  let s='<defs>'+lg('h4a',[[0,'#7fb7d6'],[1,'#f5e3b5']])+lg('h4b',[[0,'#7cb7c4'],[.5,'#2f7a90'],[1,'#1a4d60']])+'</defs>';
+  s+='<rect width="1200" height="640" fill="url(#h4a)"/>'+cloud(260,110,1.5,'c1',.7)+cloud(880,140,1.1,'c2',.55);
+  s+='<path d="M0 250Q200 205 420 240T820 230T1200 245V290H0Z" fill="#5f8f5a"/>';
+  for(let i=0;i<12;i++){ s+=tree(30+i*100+rnd(i)*40,250+rnd(i+7)*8,1+rnd(i+3)*.6,'#3f7040'); }
+  s+='<rect y="262" width="1200" height="378" fill="url(#h4b)"/><g opacity=".2" fill="#fff"><rect x="120" y="300" width="300" height="6" rx="3"/><rect x="620" y="330" width="420" height="7" rx="3"/><rect x="300" y="400" width="260" height="6" rx="3"/><rect x="760" y="450" width="300" height="6" rx="3"/></g>';
+  s+='<ellipse class="rip" cx="430" cy="420" rx="120" ry="22" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse class="rip rip2" cx="900" cy="360" rx="100" ry="18" fill="none" stroke="#fff" stroke-width="2.5"/><ellipse class="rip" cx="620" cy="520" rx="140" ry="26" fill="none" stroke="#fff" stroke-width="2.5"/>';
+  s+='<g opacity=".4">'+fish(300,470,2.6,1,'#0f2f3c')+fish(820,540,3,-1,'#0f2f3c')+fish(560,430,1.8,1,'#0f2f3c')+'</g>';
+  [[200,560,64],[980,430,52],[760,300,40]].forEach((l,i)=>{ s+='<ellipse cx="'+l[0]+'" cy="'+l[1]+'" rx="'+l[2]+'" ry="'+(l[2]*.3)+'" fill="#3f8a3f"/><ellipse cx="'+(l[0]+8)+'" cy="'+(l[1]-4)+'" rx="'+(l[2]*.18)+'" ry="'+(l[2]*.1)+'" fill="#f4a8c0"/>'; });
+  s+='<g transform="rotate(-38 640 250)">'+fish(640,250,2.4,1,'#5d6b78')+'</g><ellipse class="rip" cx="600" cy="300" rx="90" ry="14" fill="none" stroke="#fff" stroke-width="3"/>';
+  for(let i=0;i<14;i++){ s+='<circle cx="'+(560+rnd(i)*160)+'" cy="'+(180+rnd(i+30)*120)+'" r="'+(2+rnd(i+8)*3)+'" fill="#fff" opacity=".85"/>'; }
+  s+=blades(26,650,170,150,['#3f7a3a','#5a9a47','#2f6a31'],5,0,300)+blades(26,650,170,150,['#3f7a3a','#5a9a47','#2f6a31'],45,900,1200);
+  return HS(s+birds([[220,170],[300,140]]));
+}
+function H5(){
+  let s='<defs>'+lg('h5a',[[0,'#e9763a'],[.55,'#fbc77c'],[1,'#fde8b8']])+rg('h5b',[[0,'#fff3c4'],[.3,'#ffd27a',.8],[1,'#ffb347',0]])+lg('h5c',[[0,'#8a5f33'],[1,'#5c3d24']])+'</defs>';
+  s+='<rect width="1200" height="640" fill="url(#h5a)"/><circle cx="300" cy="340" r="340" fill="url(#h5b)"/><circle cx="300" cy="340" r="64" fill="#fff0c0"/>'+cloud(760,120,1.4,'c1',.55)+cloud(1020,200,1,'c2',.5);
+  s+='<path d="M0 330Q260 280 520 320T1000 300T1200 320V420H0Z" fill="#a4793f"/><path d="M0 370Q300 330 600 362T1200 350V440H0Z" fill="#7d5d32"/>';
+  for(let r=0;r<3;r++){ const y=400+r*38,sc=.9+r*.5; for(let x=-10+r*17;x<1230;x+=46*sc){ s+=stalk(x,y,sc*1.35); } }
+  s+='<rect width="1200" height="640" fill="#ffb347" opacity=".13"/><rect y="500" width="1200" height="140" fill="url(#h5c)"/>';
+  s+=person(900,560,2.3,'#2e7fb8');
+  s+='<g transform="translate(70 520) scale(2.6)">'+crate(0,0,100,'#d8402f',4)+'</g><g transform="translate(360 540) scale(2.4)">'+crate(0,0,100,'#f0a030',4)+'</g><g transform="translate(640 530) scale(2.4)">'+crate(0,0,100,'#6fae3f',4)+'</g>';
+  s+=blades(40,650,20,40,['#6b4a2a','#8a6238','#4a3320'],61,0,1200)+'<path d="M300 340L40 640L360 640Z" fill="#fff" opacity=".07"/>';
+  return HS(s+birds([[560,170],[640,140],[700,190]]));
+}
+const HERO_SCENES = [H1,H2,H3,H4,H5];
+
+/* ---------- helpers ---------- */
+const $ = (s, r) => (r||document).querySelector(s);
+const $$ = (s, r) => Array.from((r||document).querySelectorAll(s));
+const money = n => n==null ? 'Price on request' : CONFIG.currency + Number(n).toLocaleString('en-NG');
+const waUrl = text => 'https://wa.me/' + CONFIG.whatsapp + (text ? '?text=' + encodeURIComponent(text) : '');
+const fmtDate = d => { try{ return new Date(d+'T00:00:00').toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric'}); }catch(e){ return d; } };
+
+/* ---------- bind config ---------- */
+$$('[data-bind]').forEach(el => { el.textContent = CONFIG[el.dataset.bind] || ''; });
+$$('[data-name-split]').forEach(el => { const p = CONFIG.name.split(' '); const last = p.pop(); el.innerHTML = (p.join(' ') ? p.join(' ')+' ' : '') + '<em>'+last+'</em>'; });
+$$('a[data-wa]').forEach(a => { a.href = waUrl('Hello ' + CONFIG.name + ', I would like to make an enquiry.'); });
+$$('a[data-tel]').forEach(a => { a.href = 'tel:' + CONFIG.phone.replace(/[^+\d]/g,''); });
+$$('a[data-social]').forEach(a => { a.href = CONFIG.social[a.dataset.social] || '#contact'; });
+$('#mapLink').href = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(CONFIG.mapQuery);
+$('#yr').textContent = new Date().getFullYear();
+$$('[data-scene]').forEach(el => { el.innerHTML = artHtml(el.dataset.scene, '', 'Farm illustration'); });
+
+/* ---------- navigation ---------- */
+const nav = $('#nav'), menuBtn = $('#menuBtn');
+function closeMenu(){ nav.classList.remove('open'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.setAttribute('aria-label','Open menu'); }
+menuBtn.addEventListener('click', () => { const o = nav.classList.toggle('open'); menuBtn.setAttribute('aria-expanded', String(o)); menuBtn.setAttribute('aria-label', o ? 'Close menu' : 'Open menu'); });
+function go(id){ const el = document.getElementById(id); if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); } closeMenu(); }
+document.addEventListener('click', e => { const a = e.target.closest('a[data-go]'); if(!a) return; e.preventDefault(); if(a.dataset.type){ setType(a.dataset.type); } go(a.dataset.go); });
+if('IntersectionObserver' in window){
+  const links = $$('nav#nav a[data-go]');
+  const io = new IntersectionObserver(es => { es.forEach(en => { if(en.isIntersecting){ links.forEach(l => l.classList.toggle('active', l.dataset.go === en.target.id)); } }); }, {rootMargin:'-40% 0px -55% 0px'});
+  $$('main section[id]').forEach(s => io.observe(s));
+}
+$('#themeBtn').addEventListener('click', () => {
+  const root = document.documentElement;
+  const cur = root.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  root.dataset.theme = cur === 'dark' ? 'light' : 'dark';
+});
+
+/* ---------- activities ---------- */
+$('#actGrid').innerHTML = ACTIVITIES.map(a =>
+  '<article class="card"><div class="art">'+artHtml(a.scene,a.photo,a.name)+'</div><div class="body"><h3>'+a.name+'</h3><p>'+a.desc+'</p><div class="chips">'+a.tags.map(t=>'<span class="chip">'+t+'</span>').join('')+'</div></div></article>').join('');
+
+/* ---------- products ---------- */
+const cats = ['All'].concat(Array.from(new Set(PRODUCTS.map(p => p.category))));
+let activeCat = 'All';
+function renderFilters(){
+  $('#filters').innerHTML = cats.map(c => '<button type="button" data-cat="'+c+'" aria-pressed="'+(c===activeCat)+'">'+c+'</button>').join('');
+}
+function renderProducts(){
+  const list = PRODUCTS.filter(p => activeCat==='All' || p.category===activeCat);
+  $('#prodGrid').innerHTML = list.map(p => {
+    const i = PRODUCTS.indexOf(p);
+    const msg = 'Hello ' + CONFIG.name + ', I would like to ask about: ' + p.name + '.';
+    return '<article class="card prod"><div class="art">'+artHtml('',p.photo,p.name,p.art)+'</div><div class="body"><span class="cat">'+p.category+'</span><h3>'+p.name+'</h3><p>'+p.desc+'</p><div class="price">'+money(p.price)+(p.unit?' <small>'+p.unit+'</small>':'')+'</div><div class="row"><button type="button" class="btn small" data-enq="'+i+'">Enquire</button><a class="btn small ghost" href="'+waUrl(msg)+'" target="_blank" rel="noopener">WhatsApp</a></div></div></article>';
+  }).join('');
+}
+renderFilters(); renderProducts();
+$('#filters').addEventListener('click', e => { const b = e.target.closest('button[data-cat]'); if(!b) return; activeCat = b.dataset.cat; renderFilters(); renderProducts(); });
+const prodSel = $('#f-product');
+PRODUCTS.forEach(p => { const o = document.createElement('option'); o.value = p.name; o.textContent = p.name; prodSel.appendChild(o); });
+function setType(t){ const s = $('#f-type'); Array.from(s.options).forEach(o => { if(o.text === t){ s.value = o.value || o.text; } }); }
+$('#prodGrid').addEventListener('click', e => {
+  const b = e.target.closest('button[data-enq]'); if(!b) return;
+  const p = PRODUCTS[Number(b.dataset.enq)];
+  prodSel.value = p.name; setType('Product enquiry'); go('contact');
+  setTimeout(() => { const m = $('#f-msg'); if(!m.value){ m.value = 'I would like to ask about ' + p.name + '. Quantity needed: '; } m.focus({preventScroll:true}); }, 500);
+});
+
+/* ---------- gallery + lightbox ---------- */
+$('#gal').innerHTML = GALLERY.map((g,i) => '<button type="button" class="'+(g.wide?'wide':'')+'" data-i="'+i+'" aria-label="View: '+g.title+'">'+artHtml(g.scene,g.photo,g.title)+'<span class="cap">'+g.title+'</span></button>').join('');
+const lb = $('#lb'); let lbIdx = 0, lastFocus = null;
+function showLb(i){ lbIdx = (i + GALLERY.length) % GALLERY.length; const g = GALLERY[lbIdx]; $('#lbStage').innerHTML = artHtml(g.scene,g.photo,g.title); $('#lbCap').textContent = g.title + '  (' + (lbIdx+1) + ' of ' + GALLERY.length + ')'; }
+function openLb(i){ lastFocus = document.activeElement; showLb(i); lb.hidden = false; $('#lbClose').focus(); }
+function closeLb(){ lb.hidden = true; if(lastFocus){ lastFocus.focus(); } }
+$('#gal').addEventListener('click', e => { const b = e.target.closest('button[data-i]'); if(b) openLb(Number(b.dataset.i)); });
+$('#lbPrev').addEventListener('click', () => showLb(lbIdx-1));
+$('#lbNext').addEventListener('click', () => showLb(lbIdx+1));
+$('#lbClose').addEventListener('click', closeLb);
+lb.addEventListener('click', e => { if(e.target === lb) closeLb(); });
+document.addEventListener('keydown', e => { if(lb.hidden) return; if(e.key==='Escape') closeLb(); if(e.key==='ArrowLeft') showLb(lbIdx-1); if(e.key==='ArrowRight') showLb(lbIdx+1); });
+
+/* ---------- news ---------- */
+$('#newsGrid').innerHTML = NEWS.map((n,i) =>
+  '<article class="card news-item"><div class="art">'+artHtml(n.scene,n.photo,n.title)+'</div><div class="body"><div class="meta"><span class="tag">'+n.tag+'</span><time datetime="'+n.date+'">'+fmtDate(n.date)+'</time></div><h3>'+n.title+'</h3><p>'+n.excerpt+'</p><div class="more" id="more'+i+'" hidden>'+n.body.map(b=>'<p>'+b+'</p>').join('')+'</div><button type="button" class="tog" data-n="'+i+'" aria-expanded="false" aria-controls="more'+i+'">Read more</button></div></article>').join('');
+$('#newsGrid').addEventListener('click', e => {
+  const b = e.target.closest('button[data-n]'); if(!b) return;
+  const box = $('#more'+b.dataset.n); const open = box.hidden; box.hidden = !open;
+  b.setAttribute('aria-expanded', String(open)); b.textContent = open ? 'Show less' : 'Read more';
+});
+
+/* ---------- contact form ---------- */
+const form = $('#form'), result = $('#result');
+const setErr = (k, t) => { const el = $('.err[data-for="'+k+'"]', form); if(el){ el.textContent = t || ''; } };
+form.addEventListener('submit', async e => {
+  e.preventDefault();
+  if(form.website.value){ return; }                       // spam trap
+  const v = { name: form.name.value.trim(), phone: form.phone.value.trim(), email: form.email.value.trim(), type: form.type.value, product: form.product.value, message: form.message.value.trim() };
+  let ok = true;
+  ['name','phone','email','message'].forEach(k => setErr(k,''));
+  if(v.name.length < 2){ setErr('name','Please enter your name.'); ok = false; }
+  const digits = v.phone.replace(/\D/g,'');
+  if(v.phone && (digits.length < 7 || digits.length > 15 || /[^\d+\s()-]/.test(v.phone))){ setErr('phone','Enter a valid phone number, for example +234 800 000 0000.'); ok = false; }
+  if(v.email && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v.email)){ setErr('email','Enter a valid email address.'); ok = false; }
+  if(!v.phone && !v.email){ setErr('phone','Add a phone number or an email address so we can reply.'); ok = false; }
+  if(v.message.length < 10){ setErr('message','Please write a short message (at least 10 characters).'); ok = false; }
+  if(!ok){ const first = $('.err:not(:empty)', form); if(first){ first.parentElement.querySelector('input,textarea,select').focus(); } return; }
+
+  const lines = ['Hello ' + CONFIG.name + ',', '', 'Enquiry type: ' + v.type];
+  if(v.product) lines.push('Product: ' + v.product);
+  lines.push('', v.message, '', 'Name: ' + v.name);
+  if(v.phone) lines.push('Phone: ' + v.phone);
+  if(v.email) lines.push('Email: ' + v.email);
+  const msg = lines.join('\n');
+
+  let status = '';
+  if(CONFIG.formEndpoint){
+    try{
+      const r = await fetch(CONFIG.formEndpoint, {method:'POST', headers:{'Content-Type':'application/json','Accept':'application/json'}, body: JSON.stringify(v)});
+      status = r.ok ? 'Your enquiry was sent to our team.' : 'We could not send the form automatically. Please use WhatsApp or email below.';
+    }catch(err){ status = 'We could not send the form automatically. Please use WhatsApp or email below.'; }
+  }
+  result.hidden = false;
+  result.innerHTML = '<h4 tabindex="-1" id="resHead">Your enquiry is ready</h4><p>'+(status || 'Send it to us on WhatsApp or by email. Nothing has been sent yet.')+'</p><textarea id="resMsg" readonly aria-label="Your enquiry message"></textarea><div class="actions"><a class="btn" id="resWa" target="_blank" rel="noopener">Send on WhatsApp</a><a class="btn ghost" id="resMail">Send by email</a><button type="button" class="btn ghost" id="resCopy">Copy message</button></div><p class="hint" id="resNote" style="margin-top:10px"></p>';
+  $('#resMsg').value = msg;
+  $('#resWa').href = waUrl(msg);
+  $('#resMail').href = 'mailto:' + CONFIG.email + '?subject=' + encodeURIComponent(v.type + ' - ' + v.name) + '&body=' + encodeURIComponent(msg);
+  $('#resNote').textContent = 'If the email button does nothing, copy the message and send it to ' + CONFIG.email + '.';
+  $('#resCopy').addEventListener('click', () => {
+    const t = $('#resMsg'); const done = () => { $('#resCopy').textContent = 'Copied'; };
+    const fallback = () => { t.focus(); t.select(); $('#resCopy').textContent = 'Press copy on your device'; };
+    try{ navigator.clipboard.writeText(t.value).then(done, fallback); }catch(err){ fallback(); }
+  });
+  $('#resHead').focus();
+});
+
+/* ---------- hero slider ---------- */
+$$('[data-hero]').forEach(el => { const i = Number(el.dataset.hero); el.innerHTML = HERO_PHOTOS[i] ? '<img src="'+HERO_PHOTOS[i]+'" alt="">' : HERO_SCENES[i](); });
+(function(){
+  const root = $('#home'), track = $('#slides'), slides = $$('.slide', root), dots = $$('#dots button'), playBtn = $('#sPlay');
+  const DUR = 6500, reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let i = 0, timer = null, playing = !reduce, hover = false;
+  root.style.setProperty('--dur', DUR + 'ms');
+  const pauseIcon = '<svg viewBox="0 0 24 24"><path d="M9 6v12M15 6v12"/></svg>', playIcon = '<svg viewBox="0 0 24 24"><path d="M8 5l11 7-11 7z"/></svg>';
+  function run(){ clearTimeout(timer); if(playing && !hover && !document.hidden){ timer = setTimeout(() => show(i + 1), DUR); } }
+  function show(n){
+    i = (n + slides.length) % slides.length;
+    track.style.transform = 'translateX(-' + (i * 100) + '%)';
+    slides.forEach((s, k) => { s.classList.toggle('on', k === i); s.setAttribute('aria-hidden', String(k !== i)); s.inert = (k !== i); });
+    dots.forEach(d => d.classList.remove('on')); void root.offsetWidth;
+    dots.forEach((d, k) => { d.classList.toggle('on', k === i); d.setAttribute('aria-current', k === i ? 'true' : 'false'); });
+    run();
+  }
+  function setPlaying(p){ playing = p; root.classList.toggle('paused', !p); playBtn.innerHTML = p ? pauseIcon : playIcon; playBtn.setAttribute('aria-label', p ? 'Pause slideshow' : 'Play slideshow'); if(p){ show(i); } else { clearTimeout(timer); } }
+  dots.forEach((d, k) => d.addEventListener('click', () => show(k)));
+  $('#sPrev').addEventListener('click', () => show(i - 1));
+  $('#sNext').addEventListener('click', () => show(i + 1));
+  playBtn.addEventListener('click', () => setPlaying(!playing));
+  root.addEventListener('mouseenter', () => { hover = true; root.classList.add('paused'); clearTimeout(timer); });
+  root.addEventListener('mouseleave', () => { hover = false; if(playing){ root.classList.remove('paused'); show(i); } });
+  document.addEventListener('visibilitychange', () => { if(document.hidden){ clearTimeout(timer); } else { run(); } });
+  root.addEventListener('keydown', e => { if(e.key === 'ArrowLeft'){ show(i - 1); } if(e.key === 'ArrowRight'){ show(i + 1); } });
+  let x0 = null;
+  track.addEventListener('pointerdown', e => { x0 = e.clientX; });
+  track.addEventListener('pointerup', e => { if(x0 === null) return; const dx = e.clientX - x0; x0 = null; if(Math.abs(dx) > 50){ show(i + (dx < 0 ? 1 : -1)); } });
+  track.addEventListener('pointercancel', () => { x0 = null; });
+  setPlaying(playing); show(0);
+  if(!playing){ root.classList.add('paused'); }
+})();
+</script>
+
+</body></html>
